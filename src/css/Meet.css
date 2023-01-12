@@ -1,0 +1,84 @@
+.meet-title{
+    position: absolute;
+    width: 89%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.meet-container{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+}
+.meet-half{
+    height: 100%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.meet-input{
+    width: 70%;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #2d2d2d;
+    border-radius: 7px;
+    font-size: 20px;
+}
+.meet-join{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #787878;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+.meet-join:hover{
+    background-color: #939393;
+    color: white;
+    border: none;
+}
+.meet-join:active{
+    background-color: #5d5d5d;
+    color: white;
+    border: none;
+}
+.meet-create{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #2b6bbe;
+    color: white;
+    border: none;
+}
+.meet-create:hover{
+    background-color: #517fbc;
+    color: white;
+    border: none;
+}
+.meet-create:active{
+    background-color: #16519e;
+    color: white;
+    border: none;
+}
+.meet-separator::before{
+    content: "";
+    position: fixed;
+    margin-right: 44%;
+    height: 100%;
+    width: 2px;
+    top: 100px;
+    background-color: #535353;
+}
+.meet-error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}

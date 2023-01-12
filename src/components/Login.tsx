@@ -60,8 +60,9 @@ const Login: React.FC = () => {
 
     const handleLog = formValidate(async (values) => {
         const res : any = await userService.LoginUser(values);
-        console.log(res.data.auth);
         if(res.data.auth){
+            localStorage.setItem("token", res.data.token);
+            localStorage.setItem("user", res.data.name);
             window.location.href = "/";
         } else{
             console.log("Wrong username or password");
